@@ -10,8 +10,8 @@ Docker container for [OpenSimulator 0.9.1.1][3]
 
 To install docker in Ubuntu 18.04 use the commands:
 
-    $ sudo apt-get update
-    $ sudo wget -qO- https://get.docker.com/ | sh
+    sudo apt-get update
+    sudo wget -qO- https://get.docker.com/ | sh
 
  To install docker in other operating systems check [docker online documentation][4]
 
@@ -19,11 +19,11 @@ To install docker in Ubuntu 18.04 use the commands:
 
 To run container use the command below:
 
-    $ docker run -d -p 9000:9000 -p 9000:9000/udp quantumobject/docker-opensimulator
+    docker run -d -p 9000:9000 -p 9000:9000/udp --name opensimulator quantumobject/docker-opensimulator
  
 ## For the first configuration :
 
-     $ docker exec -it container_id after_install
+    docker exec -it container_id after_install
 
 Them respond the questions relate to virtual word : 
 
