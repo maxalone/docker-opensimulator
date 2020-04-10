@@ -62,9 +62,9 @@ Region (.....) #
 
 ## Use viewer to check the virtual world create by OpenSimulator:
 
-Imprudence viewer [http://wiki.kokuaviewer.org/wiki/Imprudence:Downloads][6]
+Firestornm viewer [https://www.firestormviewer.org/os-operating-system/][6]
 
-Grid Manager  to add your virtual world to the application ...
+To add your Opensimulator at Menu Viewer==> Preferences ==> Opensim ==> Grid Manager
 
 Where:
 
@@ -75,6 +75,8 @@ Where:
  - login page ==> http://external_ip:9000/?method=login
 
 Everything else no important at this moment. Press apply and then use info to log in.
+
+if running container in your own local computer you can directly used `Grid: localhost` without adding by Menu preferences
 
 ## More Info
 
@@ -89,5 +91,5 @@ For additional info about us and our projects check our site [www.quantumobject.
 [3]:http://opensimulator.org/wiki/Download
 [4]:http://docs.docker.com
 [5]:https://github.com/QuantumObject/docker-opensimulator
-[6]:http://wiki.kokuaviewer.org/wiki/Imprudence:Downloads
+[6]:https://www.firestormviewer.org/os-operating-system/
 [7]:https://www.quantumobject.org/
