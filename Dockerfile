@@ -1,5 +1,5 @@
 #Name of container: docker-opensimulator
-#Version of container: 0.4.2
+#Version of container: 0.4.3
 FROM quantumobject/docker-baseimage:18.04
 MAINTAINER Angel Rodriguez  "angel@quantumobject.com"
 
@@ -9,7 +9,7 @@ ENV TZ America/New_York
 #Add repository and update the container
 #Installation of necessary package/software for this containers...
 #nant was remove and added mono build dependence
-RUN curl https://download.mono-project.com/repo/xamarin.gpg | sudo apt-key add - \ 
+RUN curl https://download.mono-project.com/repo/xamarin.gpg | apt-key add - \ 
     && echo "deb http://download.mono-project.com/repo/ubuntu bionic main" | tee /etc/apt/sources.list.d/mono-official.list
 RUN echo $TZ > /etc/timezone && apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y -q  --no-install-recommends screen mono-complete ca-certificates-mono tzdata \
                     && rm /etc/localtime  \
